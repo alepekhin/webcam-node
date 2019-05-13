@@ -1,0 +1,15 @@
+{
+  "name": "webcam-client-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "x.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-webcam": "^0.5.0",
+    "axios": "^0.18.0"
+  }
+}
