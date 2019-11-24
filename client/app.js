@@ -11,7 +11,7 @@ const host = process.argv[2];
 var webcamid = undefined;
 
 if (process.argv.length == 2) {
-    console.log('Usage: use server address as parameter, i.e. http://localhost:8080')
+    console.log('Usage: use server address as parameter, i.e. http://localhost:4000')
     process.exit(1);
 }
 
@@ -24,7 +24,7 @@ async function sendImage() {
 }
 
 async function post(data) {
-    console.log('post to '+webcamid);
+    //console.log('post to '+webcamid);
     let config = {
         'url': host + '/webcam',
         'method': 'POST',

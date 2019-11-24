@@ -3,13 +3,16 @@ import config from '../config';
 
 export default class FileListStore {
 
-    constructor(eventEmitter) {
+    constructor(props, eventEmitter) {
         this.eventEmitter = eventEmitter;
+        this.webcamid = props.match.params.webcamid;
+        //console.log('FileListStore: '+this.webcamid);
+        config.data.webcamid = this.webcamid;
     }
 
     getFiles() {
         let aconfig = {
-            'url': config.data.BEURL+'/' + config.data.webcamid,
+            'url': config.data.BEURL+'/' + this.webcamid,
             'method': 'GET'
         };
         axios(aconfig)

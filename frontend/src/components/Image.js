@@ -21,7 +21,7 @@ class Image extends React.Component {
         // no axios needed for showing image from BE
         let selectedFile = config.data.BEURL + '/' + path.join(config.data.webcamid, this.state.selectedFile);
         return (
-            <img width='320' height='240' alt='No files' src={selectedFile}/>
+            <img width='365' height='240' alt='No files' src={selectedFile}/>
         );
     }
 } 
