@@ -1,5 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { BrowserRouter, Route } from 'react-router-dom';
+import App from './components/App';
+import Home from './components/Home';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+    <BrowserRouter>
+        <Route exact path="/" component={Home}/>
+        <Route path="/:webcamid" component={App}/>
+    </BrowserRouter>
+), document.getElementById('root'));

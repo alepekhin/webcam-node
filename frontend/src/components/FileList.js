@@ -23,7 +23,7 @@ class FileList extends React.Component {
             <div>
                 <label htmlFor="files">File list:</label>
                 <ul id="files">
-                    {this.state.files.map(( file ) => <li key="{file}"><a href="javascript:void(0);" onClick={() => this.handleClick({file})}>{file}</a></li> )}
+                    {this.state.files.map(( file, index ) => <li key={index}><button class="btn btn-link" onClick={() => this.handleClick({file})}>{file}</button></li> )}
                 </ul>
             </div>
         );

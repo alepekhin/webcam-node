@@ -1,5 +1,11 @@
 # Node based webcam backend
 
+## How to run
+
+- npm install
+- node index.js
+
+It starts backend web server at port 4000
 
 ## Backend endpoints
 
@@ -8,7 +14,3 @@
     GET /webcam/{webcamid}
     POST /webcam
 
-
-
-node app.js
-```
