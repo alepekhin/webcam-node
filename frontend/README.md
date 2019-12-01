@@ -5,7 +5,7 @@ Shows list of images and selected image
 ## How to run
 
 - npm install
-- npm stat
+- npm start
 
 Development web server listening on port 3000 will be started
 

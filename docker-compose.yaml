@@ -1,0 +1,13 @@
+version: '2.3'
+
+services:
+
+  webcam-backend:
+    image: webcam/backend:latest
+    ports:
+      - 4000:4000
+
+  webcam-frontend:
+    image: webcam/frontend:latest
+    ports:
+      - 3000:3000
