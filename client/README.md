@@ -15,5 +15,7 @@ npm install
 node app.js http://localhost:4000
 ```
 
+Client webcamid will be obtained from backend and saved in ~/.webcam.properties
+
 
 
